@@ -14,7 +14,7 @@ User.destroy_all
     last_name: Faker::Name.last_name,
     description: Faker::Lorem.sentence,
     email: Faker::Name.first_name + "#{rand(9999)}@yopmail.com", #Faker::Internet.email,
-    encrypted_password: Faker::Lorem.characters(number: 6)
+    password: Faker::Lorem.characters(number: 6)
   )
 end
 
